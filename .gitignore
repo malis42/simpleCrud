@@ -1,0 +1,6 @@
+vendor
+.idea
+access.log
+error.log
+.env
+composer.lock

@@ -1,0 +1,17 @@
+{
+    "name": "malis42/sabre-crud",
+    "authors": [
+        {
+            "name": "malis42",
+            "email": "mateuuszlis@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\" : "./"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.1"
+    }
+}
