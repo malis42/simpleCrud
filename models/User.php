@@ -67,8 +67,7 @@ class User extends DbModel
         $stmt = $this->prepareStatement("SELECT * FROM users WHERE id = :id");
         $stmt->bindParam(':id', $id);
         $stmt->execute();
-        $data = $stmt->fetch(\PDO::FETCH_ASSOC);
-        return $data;
+        return $data = $stmt->fetch(\PDO::FETCH_ASSOC);;
     }
 
     public function update(int $id)
