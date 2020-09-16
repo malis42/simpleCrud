@@ -75,7 +75,6 @@ class Router
 
         if(!empty($this->params)) $callback[0]->params = $this->params;
 
-
         return call_user_func($callback, $this->request);
     }
 

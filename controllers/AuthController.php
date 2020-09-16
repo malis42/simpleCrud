@@ -26,10 +26,6 @@ class AuthController extends Controller
                 Application::$app->response->redirect('/');
             }
 
-            echo '<pre>';
-            var_dump($client);
-            echo '</pre>';
-            exit;
             return $this->render('register', [
                 'model' => $client
             ]);

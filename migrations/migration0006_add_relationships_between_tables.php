@@ -1,7 +1,7 @@
 <?php
 
 
-class migration0007_add_relationships_between_tables
+class migration0006_add_relationships_between_tables
 {
     public function up()
     {
@@ -14,9 +14,5 @@ class migration0007_add_relationships_between_tables
         
         ALTER TABLE `phone_numbers` ADD CONSTRAINT `phone_numbers_fk1` FOREIGN KEY (`user_id`) REFERENCES `users`(`id`);";
         $db->pdo->exec($sql);
-    }
-
-    public function down()
-    {
     }
 }
