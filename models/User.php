@@ -58,8 +58,7 @@ class User extends DbModel
 
         $stmt = $this->prepareStatement("SELECT * FROM users");
         $stmt->execute();
-        $data = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-        return $data;
+        return $data = $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
     public function selectUser(int $id)
